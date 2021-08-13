@@ -11,7 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegisterComponent } from './auth/register/register.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { NavigationComponent } from './shared/navigation/navigation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RibbonComponent } from './shared/ribbon/ribbon.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    NavigationComponent
+    RibbonComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
