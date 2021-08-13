@@ -55,15 +55,15 @@
     </div>
 </div>
 
-<section class="user-container">
-    <article class="user" *ngFor="let user of users.data">
+<section class="drink-container">
+    <article class="drink" *ngFor="let drink of drinks">
         <div>
-        <img src="{{user.avatar}}" alt=""> 
+        <img src="{{drink.avatar}}" alt=""> 
     </div>
     <div>
-        <p>{{user.id}}</p>  
-        <p>{{user.email}}</p>  
-        <h4>{{user.first_name}}{{user.last_name}}</h4>      
+        <p>{{drink.id}}</p>  
+        <p>{{drink.email}}</p>  
+        <h4>{{drink.first_name}}{{drink.last_name}}</h4>      
     </div>
     </article>
 </section>

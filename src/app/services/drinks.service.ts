@@ -8,7 +8,7 @@ import { ListDrink } from '../interfaces/drinksAPI';
 })
 export class DrinksService {
 
-  url:string = "https://app-neryzach.herokuapp.com/"; //change it
+  url:string = "https://acidbasedprogram.herokuapp.com/"; 
 
   constructor(private http:HttpClient) { }
 

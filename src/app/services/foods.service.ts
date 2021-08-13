@@ -14,6 +14,6 @@ export class FoodsService {
    }
 
    getVinyls(){
-    return this.http.get<FoodResult>("https://app-neryzach.herokuapp.com/vinyls?page1"); //change it too
+    return this.http.get<FoodResult>("https://acidbasedprogram.herokuapp.com/"); 
   }
 }

@@ -14,6 +14,6 @@ export class UsersService {
    }
 
    getUsers(){
-     return this.http.get<UserResult>("https://reqres.in/api/users?page=1");
+     return this.http.get<UserResult>("https://acidbasedprogram.herokuapp.com/");
    }
 }
